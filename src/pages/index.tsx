@@ -20,7 +20,7 @@ export default function Home() {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="./public/images/favicon-32x32.png"
+          href="../../public/images/favicon-32x32.png"
         />
 
         <title>Frontend Mentor | Workit landing page</title>
