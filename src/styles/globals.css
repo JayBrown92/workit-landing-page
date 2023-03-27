@@ -1,36 +1,53 @@
-/*
-  1. Use a more-intuitive box-sizing model.
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope&display=swap");
+:root {
+  /* colors */
+  --dark-purple: hsl(273, 85%, 13%);
+  --davys-grey: hsl(271, 12%, 34%);
+  --eucalyptus: hsl(150, 100%, 63%);
+  --ghost-white: hsl(276, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+
+  /* typography */
+  --heading-font-family: "Fraunces", sans-serif;
+  --body-font-family: "Manrope", serif;
+
+  --large-heading-font-size: 5rem;
+  --medium-heading-font-size: 3.5rem;
+  --small-heading-font-size: 2rem;
+  --body-font-size: 1.125rem;
+
+  --large-heading-line-spacing: 5rem;
+  --medium-heading-line-spacing: 4rem;
+  --small-heading-line-spacing: 2.5rem;
+  --body-line-spacing: 2rem;
+}
+
+/* 
+base styles and css resets 
 */
+
+/* resets */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/*
-    2. Remove default margin
-  */
+
 * {
   margin: 0;
 }
-/*
-    3. Allow percentage-based heights in the application
-  */
+
 html,
 body {
   height: 100%;
 }
-/*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-/*
-    6. Improve media defaults
-  */
+
 img,
 picture,
 video,
@@ -39,18 +56,14 @@ svg {
   display: block;
   max-width: 100%;
 }
-/*
-    7. Remove built-in form typography styles
-  */
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-/*
-    8. Avoid text overflows
-  */
+
 p,
 h1,
 h2,
@@ -60,10 +73,55 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-/*
-    9. Create a root stacking context
-  */
+
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* base styles */
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--large-heading-font-size);
+  line-height: var(--large-heading-line-spacing);
+}
+h2 {
+  font-size: var(--medium-heading-font-size);
+  line-height: var(--medium-heading-line-spacing);
+}
+h3 {
+  font-size: var(--small-heading-font-size);
+  line-height: var(--small-heading-line-spacing);
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-spacing);
+}
+
+/* 
+class and template styles 
+*/
+
+header {
+  display: flex;
+  flex: flex-wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem;
+  background-color: var(--dark-purple);
+}
+
+header nav a {
+  color: var(--white);
+  text-decoration: none;
 }
