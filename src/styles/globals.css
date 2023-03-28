@@ -20,6 +20,15 @@
   --medium-heading-line-spacing: 4rem;
   --small-heading-line-spacing: 2.5rem;
   --body-line-spacing: 2rem;
+
+  /* UI params */
+
+  --mob-section-spacing-y: 4rem;
+  --mob-container-spacing-y: 2.5;
+  --mob-section-spacing-x: 1rem;
+  --mob-container-spacing-x: 1rem;
+
+  --mob-inner-content-spacing: 2rem;
 }
 
 /* 
@@ -77,51 +86,4 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-}
-
-/* base styles */
-
-h1,
-h2,
-h3 {
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-}
-
-h1 {
-  font-size: var(--large-heading-font-size);
-  line-height: var(--large-heading-line-spacing);
-}
-h2 {
-  font-size: var(--medium-heading-font-size);
-  line-height: var(--medium-heading-line-spacing);
-}
-h3 {
-  font-size: var(--small-heading-font-size);
-  line-height: var(--small-heading-line-spacing);
-}
-
-body {
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size);
-  line-height: var(--body-line-spacing);
-}
-
-/* 
-class and template styles 
-*/
-
-header {
-  display: flex;
-  flex: flex-wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 2rem 1rem;
-  background-color: var(--dark-purple);
-}
-
-header nav a {
-  color: var(--white);
-  text-decoration: none;
 }
