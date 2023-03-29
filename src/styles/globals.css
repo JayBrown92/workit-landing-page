@@ -87,3 +87,101 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* base styles */
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--large-heading-font-size);
+  line-height: var(--large-heading-line-spacing);
+}
+h2 {
+  font-size: var(--medium-heading-font-size);
+  line-height: var(--medium-heading-line-spacing);
+}
+h3 {
+  font-size: var(--small-heading-font-size);
+  line-height: var(--small-heading-line-spacing);
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-spacing);
+}
+
+/* 
+class and template styles 
+*/
+
+header {
+  display: flex;
+  flex: flex-wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem;
+  background-color: var(--dark-purple);
+}
+
+header nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+header nav a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--eucalyptus);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 240px;
+}
+
+footer .footer-logo {
+  flex-basis: 100%;
+  margin-bottom: 3.5rem;
+}
+
+footer .footer-icons {
+  basis-full: 100%;
+  display: flex;
+  column-gap: 2rem;
+
+  justify-content: space-between;
+}
+
+.hero {
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+
+.container {
+  padding: var(--mob-container-spacing-x) 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mob-inner-content-spacing);
+}
+
+.btn-primary {
+  height: 55px;
+  padding: 0 2rem;
+  background-color: var(--eucalyptus);
+  color: var(--dark-purple);
+}

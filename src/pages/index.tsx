@@ -31,9 +31,9 @@ export default function Home() {
           <Link href={"#apply-for-access-section"}>Apply for access</Link>
         </nav>
       </header>
-      <section id="hero-section">
+      <section id="hero-section" className="hero">
         <h1>Data tailored to your needs</h1>
-        <button>Learn more</button>
+        <button className="btn-primary">Learn more</button>
         <Image
           src={HeroImage}
           alt="Hero graphic of a phone with a series chart going up"
@@ -88,10 +88,13 @@ export default function Home() {
         <Image
           src={LogoDark}
           alt="Dark colored version of the workit logo"
+          className="footer-logo"
         />{" "}
-        <Image src={FacebookIcon} alt="SVG icon of the facebook logo" />
-        <Image src={TwitterIcon} alt="SVG icon of the Twitter logo" />
-        <Image src={InstagramIcon} alt="SVG icon of the Instagram logo" />
+        <div className="footer-icons">
+          <Image src={FacebookIcon} alt="SVG icon of the facebook logo" />
+          <Image src={TwitterIcon} alt="SVG icon of the Twitter logo" />
+          <Image src={InstagramIcon} alt="SVG icon of the Instagram logo" />
+        </div>
       </footer>
     </>
   );
