@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import LogoLight from "../../public/images/logo-light.svg";
 import HeroImage from "../../public/images/image-hero.webp";
+import DivShapeMob from "../../public/images/div-shape-mob.svg";
 import FounderImage from "../../public/images/image-founder.webp";
 import LogoDark from "../../public/images/logo-dark.svg";
 import FacebookIcon from "../../public/images/icon-facebook.svg";
@@ -27,19 +28,28 @@ export default function Home() {
       </Head>
       <header>
         <Image src={LogoLight} alt="main header logo image" />
-        <nav>
+        <nav className="underline">
           <Link href={"#apply-for-access-section"}>Apply for access</Link>
         </nav>
       </header>
       <section id="hero-section" className="hero">
-        <h1>Data tailored to your needs</h1>
-        <button className="btn-primary">Learn more</button>
-        <Image
-          src={HeroImage}
-          alt="Hero graphic of a phone with a series chart going up"
-        />
+        <div className="container">
+          <div className="content">
+            <h1>
+              Data <span className="underline">tailored</span> to your needs
+            </h1>
+            <button className="btn-primary">Learn more</button>
+          </div>
+        </div>
       </section>
-      <section id="features-section">
+      <Image
+        src={HeroImage}
+        width={320}
+        height={184}
+        alt="Hero graphic of a phone with a series chart going up"
+        className="hero-image"
+      />
+      <section id="features-section" className="features">
         <div>
           <p>1</p>
           <h2>Actionable insights</h2>{" "}

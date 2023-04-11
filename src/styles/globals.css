@@ -11,12 +11,12 @@
   --heading-font-family: "Fraunces", sans-serif;
   --body-font-family: "Manrope", serif;
 
-  --large-heading-font-size: 5rem;
+  --large-heading-font-size: 3.125rem;
   --medium-heading-font-size: 3.5rem;
   --small-heading-font-size: 2rem;
   --body-font-size: 1.125rem;
 
-  --large-heading-line-spacing: 5rem;
+  --large-heading-line-spacing: 3.125rem;
   --medium-heading-line-spacing: 4rem;
   --small-heading-line-spacing: 2.5rem;
   --body-line-spacing: 2rem;
@@ -83,9 +83,14 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  text-decoration: none;
+}
+
 #root,
 #__next {
   isolation: isolate;
+  position: relative;
 }
 
 /* base styles */
@@ -115,6 +120,9 @@ body {
   font-size: var(--body-font-size);
   line-height: var(--body-line-spacing);
 }
+section {
+  padding: var(--mob-section-spacing-y) 0;
+}
 
 /* 
 class and template styles 
@@ -132,15 +140,6 @@ header {
 
 header nav a {
   color: var(--white);
-  text-decoration: none;
-}
-
-header nav a:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--eucalyptus);
 }
 
 footer {
@@ -160,23 +159,37 @@ footer .footer-icons {
   basis-full: 100%;
   display: flex;
   column-gap: 2rem;
-
   justify-content: space-between;
 }
 
 .hero {
-  background-color: var(--dark-purple);
   color: var(--white);
+  background-color: var(--dark-purple);
+  clip-path: ellipse(125% 100% at 50% 0);
+  padding-bottom: calc(var(--mob-section-spacing-y) + 92px);
+}
+
+.features {
+  padding-top: calc(var(--mob-section-spacing-y) + 92px);
 }
 
 .container {
-  padding: var(--mob-container-spacing-x) 1rem;
+  padding: 0 var(--mob-container-spacing-x);
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: var(--mob-inner-content-spacing);
+}
+
+.hero-image {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-primary {
@@ -184,4 +197,29 @@ footer .footer-icons {
   padding: 0 2rem;
   background-color: var(--eucalyptus);
   color: var(--dark-purple);
+}
+
+/* Utils */
+.underline {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0.25rem;
+}
+.underline:after {
+  content: "";
+  display: block;
+  height: 0.25rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--eucalyptus);
+}
+
+h1:has(.underline) > span:after {
+  width: 90%;
+  left: 5%;
+}
+
+.features {
+  padding-top: calc(var(--mob-section-spacing-y) + 92px);
 }
