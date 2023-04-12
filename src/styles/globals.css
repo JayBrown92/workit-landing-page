@@ -250,6 +250,9 @@ h1:has(.underline) > span:after {
   color: var(--dark-purple);
 }
 
+.about {
+  padding-top: calc(var(--mob-section-spacing-y) - 45.25px);
+}
 .about img {
   position: relative;
   margin: 0 auto;
