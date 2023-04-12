@@ -12,23 +12,23 @@
   --body-font-family: "Manrope", serif;
 
   --large-heading-font-size: 3.125rem;
-  --medium-heading-font-size: 1.75rem;
-  --small-heading-font-size: 2rem;
+  --medium-heading-font-size: 2rem;
+  --small-heading-font-size: 1.75rem;
   --body-font-size: 1rem;
 
   --large-heading-line-spacing: 3.125rem;
-  --medium-heading-line-spacing: 2.25rem;
-  --small-heading-line-spacing: 2.5rem;
+  --medium-heading-line-spacing: 3rem;
+  --small-heading-line-spacing: 2.25rem;
   --body-line-spacing: 1.75rem;
 
   /* UI params */
 
-  --mob-section-spacing-y: 4rem;
-  --mob-container-spacing-y: 2.5;
-  --mob-section-spacing-x: 1rem;
-  --mob-container-spacing-x: 1rem;
+  --section-spacing-y: 4rem;
+  --container-spacing-y: 2.5;
+  --section-spacing-x: 1rem;
+  --container-spacing-x: 1rem;
 
-  --mob-inner-content-spacing: 2rem;
+  --inner-content-spacing: 2rem;
 
   --footer-spacing-y: 4.625rem;
 }
@@ -123,7 +123,7 @@ body {
   line-height: var(--body-line-spacing);
 }
 section {
-  padding: var(--mob-section-spacing-y) 0;
+  padding: var(--section-spacing-y) 0;
 }
 
 /* 
@@ -167,11 +167,11 @@ footer .footer-icons {
   color: var(--white);
   background-color: var(--dark-purple);
   clip-path: ellipse(125% 100% at 50% 0);
-  padding-bottom: calc(var(--mob-section-spacing-y) + 92px);
+  padding-bottom: calc(var(--section-spacing-y) + 92px);
 }
 
 .container {
-  padding: 0 var(--mob-container-spacing-x);
+  padding: 0 var(--container-spacing-x);
   position: relative;
 }
 
@@ -180,10 +180,12 @@ footer .footer-icons {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: var(--mob-inner-content-spacing);
+  gap: var(--inner-content-spacing);
 }
 
 .hero-image {
+  width: 320px;
+  height: 181px;
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -219,7 +221,7 @@ h1:has(.underline) > span:after {
 }
 
 .features {
-  padding-top: calc(var(--mob-section-spacing-y) + 92px);
+  padding-top: calc(var(--section-spacing-y) + 92px);
   background-color: var(--ghost-white);
   clip-path: ellipse(200% 100% at 50% 0);
 }
@@ -252,7 +254,7 @@ h1:has(.underline) > span:after {
 }
 
 .about {
-  padding-top: calc(var(--mob-section-spacing-y) - 45.25px);
+  padding-top: calc(var(--section-spacing-y) - 45.25px);
   padding-bottom: 0;
 }
 .about img {

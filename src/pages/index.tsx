@@ -44,7 +44,6 @@ export default function Home() {
       </section>
       <Image
         src={HeroImage}
-        width={320}
         priority
         alt="Hero graphic of a phone with a series chart going up"
         className="hero-image"
