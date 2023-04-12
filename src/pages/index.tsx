@@ -45,10 +45,11 @@ export default function Home() {
       <Image
         src={HeroImage}
         width={320}
-        height={184}
+        priority
         alt="Hero graphic of a phone with a series chart going up"
         className="hero-image"
       />
+
       <section id="features-section" className="features">
         <div className="container">
           <div className="content">

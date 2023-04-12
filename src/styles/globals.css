@@ -29,6 +29,8 @@
   --mob-container-spacing-x: 1rem;
 
   --mob-inner-content-spacing: 2rem;
+
+  --footer-spacing-y: 4.625rem;
 }
 
 /* 
@@ -144,10 +146,9 @@ header nav a {
 
 footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  height: 240px;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--footer-spacing-y) 0;
 }
 
 footer .footer-logo {
@@ -252,6 +253,7 @@ h1:has(.underline) > span:after {
 
 .about {
   padding-top: calc(var(--mob-section-spacing-y) - 45.25px);
+  padding-bottom: 0;
 }
 .about img {
   position: relative;
