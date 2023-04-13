@@ -4,7 +4,9 @@ import Link from "next/link";
 
 import LogoLight from "../../public/images/logo-light.svg";
 import HeroImage from "../../public/images/image-hero.webp";
-import DivShapeMob from "../../public/images/div-shape-mob.svg";
+import BgPattern1 from "../../public/images/bg-pattern-1.svg";
+import BgPattern2 from "../../public/images/bg-pattern-2.svg";
+import BgPattern3 from "../../public/images/bg-pattern-3.svg";
 import FounderImage from "../../public/images/image-founder.webp";
 import LogoDark from "../../public/images/logo-dark.svg";
 import FacebookIcon from "../../public/images/icon-facebook.svg";
@@ -33,6 +35,11 @@ export default function Home() {
         </nav>
       </header>
       <section id="hero-section" className="hero">
+        <Image
+          src={BgPattern1}
+          alt="background pattern for hero section"
+          className="bg-pattern pattern-1"
+        />
         <div className="container">
           <div className="content">
             <h1>
@@ -41,6 +48,11 @@ export default function Home() {
             <button className="btn-primary">Learn more</button>
           </div>
         </div>
+        <Image
+          src={BgPattern2}
+          alt="background pattern for hero section"
+          className="bg-pattern pattern-2"
+        />
       </section>
       <Image
         src={HeroImage}
@@ -53,14 +65,14 @@ export default function Home() {
         <div className="container">
           <div className="content">
             <span>1</span>
-            <h2>Actionable insights</h2>{" "}
+            <h3>Actionable insights</h3>{" "}
             <p>
               Optimize your products, improve customer satisfaction and stay
               ahead of the competition with our product data analytics.
             </p>
           </div>
           <div className="content">
-            <span>2</span> <h2>Data-driven decisions</h2>{" "}
+            <span>2</span> <h3>Data-driven decisions</h3>{" "}
             <p>
               {" "}
               Make data-driven decisions with our product data analytics. Our
@@ -70,7 +82,7 @@ export default function Home() {
           </div>
           <div className="content">
             <span>3</span>
-            <h2>Always affordable</h2>
+            <h3>Always affordable</h3>
             <p>
               Always affordable pricing that scales with your business. Get
               top-quality product data analytics services without hidden costs
