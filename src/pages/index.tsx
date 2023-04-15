@@ -97,6 +97,7 @@ export default function Home() {
             src={FounderImage}
             width={281}
             alt="An image of WorkIt founder, Louis Graham"
+            className="about-image"
           />{" "}
           <div className="content">
             <h2>Be the first to test</h2>
@@ -109,6 +110,11 @@ export default function Home() {
             <button className="btn-primary">Apply for access</button>
           </div>
         </div>
+        <Image
+          src={BgPattern3}
+          alt="background pattern for about section"
+          className="bg-pattern pattern-3"
+        />
       </section>
       <footer>
         {" "}
