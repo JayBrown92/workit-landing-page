@@ -385,7 +385,7 @@ h1:has(.underline) > span:after {
   }
 
   .about .content {
-    flex-basis: 85%;
+    flex-basis: 77.5%;
     margin-left: auto;
     text-align: left;
   }
