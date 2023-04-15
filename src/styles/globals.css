@@ -219,6 +219,7 @@ footer .footer-icons {
 .btn-primary {
   height: 55px;
   padding: 0 2rem;
+  font-weight: bold;
   background-color: var(--eucalyptus);
   color: var(--dark-purple);
 }
