@@ -43,7 +43,8 @@ export default function Home() {
         <div className="container">
           <div className="content">
             <h1>
-              Data <span className="underline">tailored</span> to your needs
+              Data <span className="underline">tailored</span> to <br /> your
+              needs
             </h1>
             <button className="btn-primary">Learn more</button>
           </div>
@@ -95,7 +96,6 @@ export default function Home() {
         <div className="container">
           <Image
             src={FounderImage}
-            width={281}
             alt="An image of WorkIt founder, Louis Graham"
             className="about-image"
           />{" "}
