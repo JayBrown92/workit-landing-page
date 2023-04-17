@@ -59,8 +59,6 @@
 
   --inner-content-spacing-md: 2rem;
 
-  --footer-spacing-y-md: 4.625rem;
-
   /* lg screens */
 
   --section-spacing-y-lg: 6.25rem;
@@ -71,8 +69,6 @@
   --container-spacing-x-lg: 10rem;
 
   --inner-content-spacing-lg: 2rem;
-
-  --footer-spacing-y-lg: 4.625rem;
 }
 
 /* 
@@ -175,7 +171,7 @@ class and template styles
 
 header {
   display: flex;
-  flex: flex-wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -189,8 +185,10 @@ header nav a {
 
 footer {
   display: grid;
+  position: relative;
   justify-items: center;
-  padding: var(--footer-spacing-y) 0;
+  padding-bottom: var(--footer-spacing-y);
+  z-index: -1;
 }
 
 footer .footer-logo {
@@ -322,7 +320,7 @@ h1:has(.underline) > span:after {
 }
 
 .about {
-  padding-bottom: 0;
+  padding-bottom: var(--footer-spacing-y);
 }
 .about-image {
   position: relative;
@@ -388,8 +386,8 @@ h1:has(.underline) > span:after {
 
   .pattern-3 {
     width: 170px;
-    right: 60px;
-    bottom: -20px;
+    right: 80px;
+    bottom: 0px;
   }
 
   .features {
@@ -474,7 +472,7 @@ h1:has(.underline) > span:after {
   }
   .pattern-3 {
     right: 190px;
-    bottom: 175px;
+    bottom: 0px;
   }
 
   .features {
@@ -513,9 +511,7 @@ h1:has(.underline) > span:after {
   .features .content > *:nth-child(3) {
     text-align: center;
   }
-  .about {
-    padding-bottom: 0;
-  }
+
   .about-image {
     width: 477px;
     height: 477px;
