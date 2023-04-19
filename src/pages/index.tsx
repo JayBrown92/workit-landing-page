@@ -29,10 +29,12 @@ export default function Home() {
         <title>Frontend Mentor | Workit landing page</title>
       </Head>
       <header>
-        <Image src={LogoLight} alt="main header logo image" />
-        <nav className="underline">
-          <Link href={"#apply-for-access-section"}>Apply for access</Link>
-        </nav>
+        <div className="container">
+          <Image src={LogoLight} alt="main header logo image" />
+          <nav className="underline">
+            <Link href={"#apply-for-access-section"}>Apply for access</Link>
+          </nav>
+        </div>
       </header>
       <section id="hero-section" className="hero">
         <Image

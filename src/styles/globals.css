@@ -170,13 +170,16 @@ class and template styles
 */
 
 header {
+  background-color: var(--dark-purple);
+}
+
+header .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   padding: 2rem 1rem;
-  background-color: var(--dark-purple);
 }
 
 header nav a {
@@ -456,6 +459,10 @@ h1:has(.underline) > span:after {
     line-height: var(--body-line-spacing-lg);
   }
 
+  .container {
+    max-width: 1440px;
+    margin: auto;
+  }
   .hero {
     padding: var(--hero-section-top-spacing-y-lg) 0
       calc(var(--section-spacing-y-lg) + 200px);
@@ -484,7 +491,8 @@ h1:has(.underline) > span:after {
     padding: var(--section-spacing-y-lg) 0;
   }
   .container,
-  .about .container {
+  .about .container,
+  header .container {
     padding: 0 var(--container-spacing-x-lg);
   }
 
@@ -518,7 +526,7 @@ h1:has(.underline) > span:after {
   }
 
   .about .content {
-    flex-basis: 66.33%;
+    max-width: 730px;
     margin-left: auto;
     transform: translateY(-235px);
     margin-bottom: -235px;
